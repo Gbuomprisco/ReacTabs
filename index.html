@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>ReacTabs</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1>My Tabs</h1>
+          <div id="container">
+            <div id="tabs-container"></div>
+          </div>
+      </div>
+    </div>
+    <script src="node_modules/react/dist/react.js"></script>
+    <script src="node_modules/react/dist/JSXTransformer.js"></script>
+    <script src="script.jsx" type="text/jsx"></script>
+    <script type='text/jsx'>
+
+      var Tabs = ReacTabs.Tabs,
+          TabItem =  ReacTabs.TabItem;
+
+      var app = (
+            <div role="tabpanel">
+                <Tabs>
+                    <TabItem href='home' label='Home' active>
+                        My Text on home 
+                    </TabItem>
+                    <TabItem href='login' label='Login'>
+                         My Text on login
+                    </TabItem>
+                </Tabs>
+            </div>
+        );
+
+        React.render(
+            app, document.getElementById('tabs-container')
+        );
+    </script>
+  </body>
+</html>

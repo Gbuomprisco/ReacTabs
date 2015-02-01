@@ -1,0 +1,7 @@
+{
+  "name": "ReacTabs",
+  "description": "Basic example of Bootstrap tabs made with React",
+  "devDependencies": {
+    "react": "^0.12.0"
+  }
+}
